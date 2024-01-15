@@ -1,0 +1,118 @@
+section p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cart-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.cart-item-discription {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#increment-btn,
+#decrement-btn,
+#reset {
+
+    padding: 0.5rem 1rem;
+    background-color: #597fb1;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 0px 10px;
+
+}
+
+#reset {
+    background-color: rgb(120, 2, 2);
+
+}
+
+#counter-value {
+    height: 50px;
+    min-width: 40px;
+
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 250px;
+
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+.submit {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #597fb1;
+}
+
+.submit:hover {
+    background: #597fb1;
+}
+
+@media screen and (max-width:950px) {
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+    
+}
